@@ -1,86 +1,140 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>galexander17</title>
+<title>menuSelectionBar</title>
 <style>
-#headerTable {
-	background-color: white;
-    font-family: Verdana, Helvetica;
-    font-size: 60px;
-    border:;
-    border-collapse: collapse;
-    text-align: center;
+#title {
+	color: white;
+	font-size:190px; 
+	font-family: Helvetica;
 }
-#headerCell {
-    background-color: white;
-    font-size: 20px;
+#title_type {
+	color:white;
+	transition: color 1s ease;
+	font-family: Garamond;
+}
+#title_type:hover {
+	color: red;
+	transition: color 1s ease;
+}
+#body_flowers {
+	background-image: url("https://images.pexels.com/photos/613001/pexels-photo-613001.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+	background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+}
+#body_whitespace {
+	background-color: white;
 }
 #menu {
 	width: 100%;
     height: 150px;
 }
-div {
+#menu_div {
 	width: 100%;
-    height: 100%;
-    background-color:#f0ecef;
-    transition: background-color 0.75s;
+	height: 100%;
+    background-color:#FFFFFF;
+    transition: background-color 0.85s ease;
     text-align: center;
     line-height: 130px;
     font-size:35px;
     font-family:Futura, Century Gothic;
     text-decoration: none;
+    opacity: 0.7;
 }
-#menu_link:visited {
-    color:black;
+#menu_div:hover {
+    color: white;
+    background-color:black;
+    opacity: 1;
 }
 #menu_link:link {
     color:black;
     text-decoration:none;
-    transition:color 0.75s;
-}
-#menu_div:hover {
-    color: white;
-    background-color:#bdbbbb;
+    transition:color 0.85s ease;
+	opacity: 1;
 }
 #menu_link:hover {
     color:white;
     width: 100%;
     height: 100%;
+	opacity: 1;
+}
+#menu_link:visited {
+    color:gray;
+	opacity: 1;
+}
+#info {
+	background-color: white;
+   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+	font-family: Century Gothic;
+	color:black;
+	width: 900px;
+	height: 500px;
+	margin-left: 950px;
+	margin-right: 50px;
+	display: inline-block;
+}
+#info_p {
+	color: black;
+	opacity: 1;
+	font-family: Garamond;
+	font-size: 30px;
+	padding: 20px;
+}
+#whitespace_info {
+	font-family: Verdana;
+	font-size: 30px;
 }
 </style>
-</head>
-<body>
-  <table id="headerTable" align="center" width="100%" height="100%" cellpadding="20px" cellspacing="20px">
-    <tr>
-      <td>
-        <p><strong>This is a test site</strong></p>
-      </td>
-     </tr>
-     <tr>
-      <td id="headerCell">
-        <p><strong>Testing is in progress...<br><br>
-        <a href="thewhitesquid.com" target="_blank">Click this link to visit my LinkedIn page!</a><strong>
-        </p>
-      </td>
-     </tr>
+<body id="body_flowers"> 
+  <table id="menu" align="center">
+    <th>
+      <a id="menu_link" href="" target="_blank"><div id="menu_div">Merchandise</div></a>
+    </th>
+    <th>
+      <a id="menu_link" href="" target="_blank"><div id="menu_div">Tools</div></a>
+    </th>
+    <th>
+      <a id="menu_link" href="" target="_blank"><div id="menu_div">Portfolio</div></a>
+    </th>
+    <th>
+      <a id="menu_link" href="" target="_blank"><div id="menu_div">About Me</div></a>
+    </th>
+    <th>
+      <a id="menu_link" href="" target="_blank"><div id="menu_div">Home</div></a>
+    </th>
   </table>
-  
-  <table id="menu">
-    		 <th>
-            	<a id="menu_link" href="page1.html"><div id="menu_div" >Page 1</div></a>
-             </th>
-             <th>
-            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Page 2</div></a>
-             </th>
-             <th>
-            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Page 3</div></a>
-             </th>
-             <th>
-            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Page 4</div></a>
-             </th>
-             <th>
-            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Home</div></a>
-             </th>
-    </table>
-<body>
+  <br><br><br><br><br><br>
+  <div id="title" align="center">
+	<a id="title_type">ignite.</a>
+  </div>
+  <br><br><br><br><br>
+  <div id="info" style="opacity:0.8;"> 
+  <p id="info_p">
+Information about what ignite is and what it means can be found here. 
+Information about what &lost& is and what it means can be found here as well.
+This page is mainly about the creative design work I do. This includes:
+	Flyers, Banners, Logos, Identity Projects, Client Works, Sketches,
+	Mockups, and other animated works.
+In addition, I like to include tools that I use to accelerate the quanitity, and quality of my work, for others to use and achieve their daily and weekely goals.
+Also I include information about myself, my skills and craft, personal values, and overal vision for my creative work. 
+Furthermore, include technical information, with regards to my information technology background. 
+	Information from building websites, basic Unix System Administration Tutorials and Explanations, Scripts for Unix, and explanations for SQL databases and creating and managing SQL databases.
+  </p>
+  </div>
+</body>
+<br><br><br>
+</html>
+
+<html>
+<body id="body_whitespace">
+  <div align="center" style="background-color:white;">
+  <p id="whitespace_info" align="center">
+This is a personal page under construction. Merchandise, Tools and Portfolio need to be added.<br><br>
+This is a personal page for GitHub Pages.<br><br>
+Author: <strong>Gabriel Torres</strong><br><br>
+Date: <strong>4-21-2018</strong><br><br>
+  </p>
+  </div>
+</body>
 </html>
