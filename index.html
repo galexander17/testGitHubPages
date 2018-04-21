@@ -5,24 +5,47 @@
 <style>
 #headerTable {
 	background-color: white;
-    font-family: Verdana;
+    font-family: Verdana, Helvetica;
     font-size: 60px;
     border:;
     border-collapse: collapse;
     text-align: center;
 }
 #headerCell {
-	border:;
     background-color: white;
     font-size: 20px;
 }
-#divTest {
-	background-color: white;
-    font-family: Verdana;
-    font-size: 60px;
-    border:5px solid black;
-    border-collapse: collapse;
+#menu {
+	width: 100%;
+    height: 150px;
+}
+div {
+	width: 100%;
+    height: 100%;
+    background-color:#f0ecef;
+    transition: background-color 0.75s;
     text-align: center;
+    line-height: 130px;
+    font-size:35px;
+    font-family:Futura, Century Gothic;
+    text-decoration: none;
+}
+#menu_link:visited {
+    color:black;
+}
+#menu_link:link {
+    color:black;
+    text-decoration:none;
+    transition:color 0.75s;
+}
+#menu_div:hover {
+    color: white;
+    background-color:#bdbbbb;
+}
+#menu_link:hover {
+    color:white;
+    width: 100%;
+    height: 100%;
 }
 </style>
 </head>
@@ -36,10 +59,28 @@
      <tr>
       <td id="headerCell">
         <p><strong>Testing is in progress...<br><br>
-        <a href="www.theWhiteSquid.com">Click this link to visit my LinkedIn page!</a><strong>
+        <a href="thewhitesquid.com" target="_blank">Click this link to visit my LinkedIn page!</a><strong>
         </p>
       </td>
      </tr>
   </table>
+  
+  <table id="menu">
+    		 <th>
+            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Page 1</div></a>
+             </th>
+             <th>
+            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Page 2</div></a>
+             </th>
+             <th>
+            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Page 3</div></a>
+             </th>
+             <th>
+            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Page 4</div></a>
+             </th>
+             <th>
+            	<a id="menu_link" href="" target="_blank"><div id="menu_div" >Home</div></a>
+             </th>
+    </table>
 <body>
 </html>
